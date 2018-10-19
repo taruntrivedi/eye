@@ -1,0 +1,146 @@
+.header{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+
+.brand{
+
+    margin-left: 3rem;
+    
+    
+
+    &_logo{
+        font-size: 3rem;
+      
+        &_pt1{
+            font-family: Arial;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #F6F9FC;
+
+        }
+        &_pt2{
+            font-family: infinite-stroke;
+            font-weight: bold;
+            color: #0B9ED0;
+        }&_pt3{
+            font-family: Arial;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #F6F9FC;
+
+
+        }
+
+    }
+}
+
+.contact{
+    margin-right: 3rem;
+
+    &_number{
+        color: #F6F9FC;
+        font-size: 2rem;
+        font-family: Arial;
+        font-weight: 100;
+
+    }
+
+   
+}
+
+.navbar{
+    background-color: black;
+    
+    .nav_list{
+        padding-bottom: 1rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .nav_item{
+            font-family: 'Raleway', sans-serif;
+            font-size: 1.5rem;
+             
+            .nav_link{
+                color: #F6F9FC;
+                text-decoration: none;
+               
+               &:hover{
+                   color: #0B9ED0;
+               } 
+            }
+
+        }
+
+    }
+}
+
+
+
+//////////////////////footer///////////////////
+
+.container_footer{
+   
+}
+
+.footer{
+    background-color: black;
+    
+    &_list{
+       display: flex;
+       justify-content: space-around;
+       align-items: center;
+       list-style: none;
+    }
+
+    &_item{
+        margin-top: 2rem;
+        color: #F6F9FC;
+        
+
+    }
+    &_item >ul{
+        list-style: none;
+        text-align: center;
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.5rem;
+        
+    }
+
+}
+
+.contact_link{
+    margin: auto;
+    text-align: center;
+    width: 25%;
+    padding-bottom: 2rem;
+    margin-top: 2rem;
+   
+   &_list{
+       display: flex;
+       justify-content: space-around;
+       margin-right: 5rem;
+       margin-left: 10rem;
+   }
+
+   &_item{
+       fill: #F6F9FC;  
+
+   }
+
+  .contact_link_link:visited{
+      fill: #F6F9FC;
+  }
+   
+   &_item:hover,&_item:hover &_link svg{
+       fill: #0B9ED0;            
+   }
+
+   
+
+}
