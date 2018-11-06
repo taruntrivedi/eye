@@ -388,8 +388,8 @@ background-color: #B3E5FC;
     &_info{
         border-radius: 3px;
         background-color: #B3E5FC;
-        margin-right: 20rem;
-        margin-left: 20rem;
+        margin-right: 10rem;
+        margin-left: 10rem;
         &_text{
             margin: 2rem;
             text-align: justify;
@@ -426,6 +426,206 @@ background-color: #B3E5FC;
 .slick-prev:before{
     margin-right: -50rem;
 }
+
+
+
+
+
+
+
+
+
+//////patient portal//////
+
+.patient_portal{
+
+    
+    &_info{
+
+        border-radius: 3px;
+        background-color: #B3E5FC;
+        margin-right: 10rem;
+        margin-left: 10rem;
+        
+        &_heading{
+
+            font-size: 3rem;
+            font-family: 'Raleway', sans-serif;
+            text-align: center;
+            font-weight: bold;
+            padding-top: 1rem;
+            margin-bottom: 1rem;
+            color: #039BE5;
+            text-decoration: underline;
+            text-decoration-color: white;
+        }
+
+        &_text{
+            padding: 2rem;
+            font-size: 1.5rem;
+            text-align: justify;
+            font-family: 'Roboto';
+
+            &_list{
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: 3rem;
+                margin-bottom: 3rem;
+                height: 30vh;
+                justify-content: space-around ;
+                align-items: center;
+                background-color: white;
+                box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+                border-radius: 10px;
+                .patient_portal_list{
+                    list-style: none;
+                 
+                    
+
+                    &_item{
+                        font-size: 2rem;
+                        font-weight: bold;
+                        color: #33333D ;
+
+                    }
+
+                    &_item > i{
+                        color: #039BE5;
+                        margin-right: 2rem;
+                        font-size: 2rem;
+                    }
+                }
+
+                
+            }
+
+        }
+        &_insurance{
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+
+            &_heading{
+                color: #039BE5;
+                text-align: center;
+                font-size: 3rem;
+                font-weight: bold;
+                font-family: 'Raleway', sans-serif;
+                padding-bottom: 1rem;
+                text-decoration: underline;
+                text-decoration-color: white;
+                
+            }
+
+            &_details{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                align-items: center;
+               .insurance_details_item{
+
+                 .item_title{
+                     text-align: center;
+                     font-size: 2rem;
+                     font-family: 'Roboto';
+
+                 }
+
+                 .item_logo{
+                  height: 200px;
+                  width: 300px;
+                  display: flex;
+                  margin: 1.5rem;
+                  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+                  border-radius: 10px;
+               
+                 }
+
+                 .item_logo > img{
+                    background-color: white;
+                    width: 100%;
+                    display: inline-block;
+                    height: auto;
+                    border-radius: 10px;
+                 }
+
+               } 
+            }
+
+            .insurance_info_text{
+                padding: 2rem;
+                font-size: 1.5rem;
+                text-align: justify;
+                font-family: 'Roboto';
+
+            }
+
+        }
+        &_payment{
+            padding-bottom: 1rem;
+
+            &_heading{
+                color: #039BE5;
+                text-align: center;
+                font-size: 3rem;
+                font-weight: bold;
+                font-family: 'Raleway', sans-serif;
+                padding-bottom: 1rem;
+                text-decoration: underline;
+                text-decoration-color: white;
+
+            }
+
+            &_details{
+
+                .payment_details_text{
+                    padding: 2rem;
+                    font-size: 1.5rem;
+                    text-align: justify;
+                    font-family: 'Roboto';
+
+                }
+
+                .payment_details_images{
+                    
+                  display: flex;
+                  flex-flow: row wrap;
+                  justify-content: space-around;
+                  align-items: center;
+                  
+                }
+
+                .payment_details_image{
+                    display: flex;
+                    height: 150px;
+                  width: 250px;
+                    margin: 1.5rem;
+                    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+                    border-radius: 10px;
+  
+                }
+
+                .payment_details_image >img{
+                    
+                    background-color: white;
+                    width: 100%;
+                    display: inline-block;
+                    height: auto;
+                    border-radius: 10px;
+
+                }
+            }
+        }
+
+    }
+
+    
+}
+
+
+
+
+
+
 
 
 /////////eyecare services////

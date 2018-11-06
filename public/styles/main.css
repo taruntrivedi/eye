@@ -281,8 +281,8 @@ body {
 .about_us_info {
   border-radius: 3px;
   background-color: #B3E5FC;
-  margin-right: 20rem;
-  margin-left: 20rem; }
+  margin-right: 10rem;
+  margin-left: 10rem; }
   .about_us_info_text {
     margin: 2rem;
     text-align: justify;
@@ -304,6 +304,121 @@ body {
 
 .slick-prev:before {
   margin-right: -50rem; }
+
+.patient_portal_info {
+  border-radius: 3px;
+  background-color: #B3E5FC;
+  margin-right: 10rem;
+  margin-left: 10rem; }
+  .patient_portal_info_heading {
+    font-size: 3rem;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+    color: #039BE5;
+    text-decoration: underline;
+    text-decoration-color: white; }
+  .patient_portal_info_text {
+    padding: 2rem;
+    font-size: 1.5rem;
+    text-align: justify;
+    font-family: 'Roboto'; }
+    .patient_portal_info_text_list {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+      height: 30vh;
+      justify-content: space-around;
+      align-items: center;
+      background-color: white;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+      border-radius: 10px; }
+      .patient_portal_info_text_list .patient_portal_list {
+        list-style: none; }
+        .patient_portal_info_text_list .patient_portal_list_item {
+          font-size: 2rem;
+          font-weight: bold;
+          color: #33333D; }
+        .patient_portal_info_text_list .patient_portal_list_item > i {
+          color: #039BE5;
+          margin-right: 2rem;
+          font-size: 2rem; }
+  .patient_portal_info_insurance {
+    margin-top: 2rem;
+    margin-bottom: 2rem; }
+    .patient_portal_info_insurance_heading {
+      color: #039BE5;
+      text-align: center;
+      font-size: 3rem;
+      font-weight: bold;
+      font-family: 'Raleway', sans-serif;
+      padding-bottom: 1rem;
+      text-decoration: underline;
+      text-decoration-color: white; }
+    .patient_portal_info_insurance_details {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center; }
+      .patient_portal_info_insurance_details .insurance_details_item .item_title {
+        text-align: center;
+        font-size: 2rem;
+        font-family: 'Roboto'; }
+      .patient_portal_info_insurance_details .insurance_details_item .item_logo {
+        height: 200px;
+        width: 300px;
+        display: flex;
+        margin: 1.5rem;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+        border-radius: 10px; }
+      .patient_portal_info_insurance_details .insurance_details_item .item_logo > img {
+        background-color: white;
+        width: 100%;
+        display: inline-block;
+        height: auto;
+        border-radius: 10px; }
+    .patient_portal_info_insurance .insurance_info_text {
+      padding: 2rem;
+      font-size: 1.5rem;
+      text-align: justify;
+      font-family: 'Roboto'; }
+  .patient_portal_info_payment {
+    padding-bottom: 1rem; }
+    .patient_portal_info_payment_heading {
+      color: #039BE5;
+      text-align: center;
+      font-size: 3rem;
+      font-weight: bold;
+      font-family: 'Raleway', sans-serif;
+      padding-bottom: 1rem;
+      text-decoration: underline;
+      text-decoration-color: white; }
+    .patient_portal_info_payment_details .payment_details_text {
+      padding: 2rem;
+      font-size: 1.5rem;
+      text-align: justify;
+      font-family: 'Roboto'; }
+    .patient_portal_info_payment_details .payment_details_images {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      align-items: center; }
+    .patient_portal_info_payment_details .payment_details_image {
+      display: flex;
+      height: 150px;
+      width: 250px;
+      margin: 1.5rem;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+      border-radius: 10px; }
+    .patient_portal_info_payment_details .payment_details_image > img {
+      background-color: white;
+      width: 100%;
+      display: inline-block;
+      height: auto;
+      border-radius: 10px; }
 
 .services_page_heading {
   text-align: center;
