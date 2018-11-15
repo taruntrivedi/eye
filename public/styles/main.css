@@ -292,7 +292,10 @@ body {
     .about_us_info_text .special_text {
       font-size: 4rem;
       margin-bottom: 1rem;
-      font-family: 'Raleway', sans-serif; }
+      font-family: 'Raleway', sans-serif;
+      color: #039BE5;
+      text-decoration: underline;
+      text-decoration-color: white; }
   .about_us_info_gallery .gallery_slider img {
     margin: 0 auto; }
 
@@ -428,16 +431,39 @@ body {
   text-decoration-color: #33333D;
   margin: 2rem; }
 
-.services_page_image {
-  height: 30rem;
-  width: 100%;
-  overflow: hidden;
-  margin-top: 2rem;
-  margin-bottom: 2rem; }
-  .services_page_image_link {
-    object-fit: cover;
-    width: 100%;
-    height: 100%; }
+.eyecare_info {
+  border-radius: 3px;
+  background-color: #B3E5FC;
+  margin-right: 10rem;
+  margin-left: 10rem; }
+  .eyecare_info_heading {
+    font-size: 2rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+    color: #039BE5;
+    margin: 2rem;
+    text-align: justify; }
+  .eyecare_info .eyecare_service_list {
+    margin: 2rem; }
+    .eyecare_info .eyecare_service_list .eyecare_service_item {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      margin: auto; }
+      .eyecare_info .eyecare_service_list .eyecare_service_item .eyecare_service_text .eyecare_service_title {
+        text-align: center;
+        color: #c57070;
+        font-family: 'Roboto';
+        font-size: 2.5rem;
+        font-weight: 400; }
+      .eyecare_info .eyecare_service_list .eyecare_service_item .eyecare_service_text .eyecare_service_description {
+        font-family: 'Raleway', sans-serif;
+        color: black;
+        font-size: 1.5rem; }
 
 .blog {
   position: relative;

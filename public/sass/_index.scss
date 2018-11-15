@@ -398,6 +398,9 @@ background-color: #B3E5FC;
             font-size: 4rem;
             margin-bottom: 1rem;
             font-family: 'Raleway', sans-serif;
+            color: #039BE5;
+            text-decoration: underline;
+            text-decoration-color: white;
          }
          font-size: 2rem;
          font-family: 'Raleway', sans-serif;
@@ -647,18 +650,82 @@ background-color: #B3E5FC;
 
 }
 
-.services_page_image{
-   height: 30rem;
-   width: 100%;
-   overflow: hidden;
-   margin-top: 2rem;
-   margin-bottom: 2rem;
-    &_link{
-        object-fit: cover;
-       width: 100%;
-        height: 100%;
+.eyecare_info{
+
+    border-radius: 3px;
+    background-color: #B3E5FC;
+    margin-right: 10rem;
+    margin-left: 10rem;
+
+    &_heading{
+        font-size: 2rem;
+        font-family: 'Raleway', sans-serif;
+        font-weight: bold;
+        padding-top: 1rem;
+        margin-bottom: 1rem;
+        color: #039BE5;
+        margin: 2rem;
+        text-align: justify;
+
     }
+
+    .eyecare_service_list{
+        margin: 2rem;
+
+        .eyecare_service_item{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            margin: auto;
+
+            .eyecare_service_image{
+
+            }
+            .eyecare_service_image> img{
+
+            }
+
+            .eyecare_service_text{
+
+                .eyecare_service_title{
+                    text-align: center;
+                    color: rgb(197, 112, 112);
+                    font-family: 'Roboto';
+                    font-size: 2.5rem;
+                    font-weight: 400;
+
+                }
+
+                .eyecare_service_description{
+                    font-family: 'Raleway', sans-serif;
+                    color: black;
+                    font-size: 1.5rem;
+
+                    &_list{
+    
+    
+                    }
+    
+                    &_list >li{
+    
+                    }
+    
+    
+                }
+
+            }
+
+            
+
+            
+        }
+
+    }
+    
 }
+
 
 
 //////blog/////
