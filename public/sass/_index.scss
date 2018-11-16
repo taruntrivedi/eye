@@ -666,6 +666,7 @@ background-color: #B3E5FC;
         color: #039BE5;
         margin: 2rem;
         text-align: justify;
+        padding-top: 2rem;
 
     }
 
@@ -679,16 +680,21 @@ background-color: #B3E5FC;
             justify-content: space-around;
             align-items: center;
             margin: auto;
+            padding: 2rem;
 
             .eyecare_service_image{
-
+                width: 40%;
+                
             }
             .eyecare_service_image> img{
-
+                width: 40rem;
+                height: 30rem;
+                box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+                border-radius: 10px;
             }
 
             .eyecare_service_text{
-
+              width: 40%;
                 .eyecare_service_title{
                     text-align: center;
                     color: rgb(197, 112, 112);
@@ -727,7 +733,7 @@ background-color: #B3E5FC;
 }
 
 
-
+    
 //////blog/////
 
 .blog{
