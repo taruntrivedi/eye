@@ -1,0 +1,498 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  line-height: 1.6; }
+
+@font-face {
+  font-family: infinite-stroke;
+  src: url(../Infinite_Stroke.otf); }
+
+.header {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
+
+.brand {
+  margin-left: 3rem; }
+  .brand_logo {
+    font-size: 3rem; }
+    .brand_logo_pt1 {
+      font-family: Arial;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #F6F9FC; }
+    .brand_logo_pt2 {
+      font-family: infinite-stroke;
+      font-weight: bold;
+      color: #0B9ED0; }
+    .brand_logo_pt3 {
+      font-family: Arial;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #F6F9FC; }
+
+.contact {
+  margin-right: 3rem; }
+  .contact_number {
+    color: #F6F9FC;
+    font-size: 2rem;
+    font-family: Arial;
+    font-weight: 100; }
+
+.navbar {
+  background-color: #001122; }
+  .navbar .nav_list {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none; }
+    .navbar .nav_list .nav_item {
+      font-family: 'Raleway', sans-serif;
+      font-size: 1.5rem; }
+      .navbar .nav_list .nav_item .nav_link {
+        color: #F6F9FC;
+        text-decoration: none; }
+        .navbar .nav_list .nav_item .nav_link:hover {
+          color: #0B9ED0; }
+
+.footer {
+  background-color: black; }
+  .footer_list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none; }
+  .footer_item {
+    margin-top: 2rem;
+    color: #F6F9FC; }
+  .footer_item > ul {
+    list-style: none;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem; }
+
+.contact_link {
+  margin: auto;
+  text-align: center;
+  width: 25%;
+  padding-bottom: 2rem;
+  margin-top: 2rem; }
+  .contact_link_list {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 5rem;
+    margin-left: 10rem; }
+  .contact_link_item {
+    fill: #F6F9FC; }
+  .contact_link .contact_link_link:visited {
+    fill: #F6F9FC; }
+  .contact_link_item:hover, .contact_link_item:hover .contact_link_link svg {
+    fill: #0B9ED0; }
+
+.hero {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  height: 40vh;
+  width: 100%;
+  position: relative; }
+
+.hero_img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  z-index: 1; }
+
+.hero_tag {
+  position: absolute;
+  display: block;
+  z-index: 10;
+  bottom: 0;
+  left: 2rem;
+  color: #0B9ED0;
+  font-family: 'Raleway', sans-serif;
+  font-size: 3rem; }
+
+.author_icons {
+  display: none; }
+
+.about {
+  height: 15rem;
+  border-radius: 10px;
+  margin: 5rem;
+  display: flex;
+  background-color: #B3E5FC;
+  text-align: center;
+  align-items: center; }
+
+.about > h3 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: #B3E5FC;
+  color: #039BE5; }
+
+.infobar1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 5rem;
+  margin-left: 5rem;
+  margin-top: 5rem; }
+
+.info_img1 {
+  margin-left: 20rem;
+  height: 70rem;
+  width: 50rem;
+  border-radius: 75px; }
+
+.info_img1 > img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 75px; }
+
+.infobar2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 5rem;
+  margin-left: 5rem;
+  margin-top: 5rem; }
+
+.info_img2 {
+  margin-right: 20rem;
+  height: 70rem;
+  width: 50rem;
+  border-radius: 5px;
+  border-radius: 75px; }
+
+.info_img2 > img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 75px; }
+
+.info_detail {
+  height: 60rem;
+  width: 40rem; }
+
+.info_heading {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  font-family: 'Raleway', sans-serif; }
+
+.info_text {
+  font-size: 2rem;
+  font-family: 'Raleway', sans-serif; }
+
+.services {
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+  background-color: #B3E5FC; }
+  .services_heading {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 5rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    margin-bottom: 5rem;
+    color: #039BE5; }
+  .services_section {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center; }
+    .services_section .section {
+      margin-left: 3rem;
+      margin-right: 3rem; }
+      .services_section .section_img {
+        margin-bottom: 3rem; }
+      .services_section .section_svg {
+        width: 15rem;
+        height: 15rem; }
+      .services_section .section_heading {
+        text-transform: uppercase;
+        font-size: 2rem;
+        font-family: 'Raleway', sans-serif;
+        font-weight: bold;
+        margin-bottom: 2rem;
+        color: #039BE5; }
+      .services_section .section_list {
+        list-style: none;
+        margin-bottom: 3rem; }
+      .services_section .section_list > li {
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.8rem; }
+
+.testimonial {
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
+
+#slideshow {
+  position: relative;
+  height: 20rem;
+  background-color: #33333D;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem; }
+
+#slideshow > div {
+  text-align: center;
+  position: absolute;
+  background-color: #33333D;
+  width: 100%; }
+
+.client {
+  margin: auto;
+  text-align: center; }
+
+.client > * {
+  color: white; }
+
+.client_comment {
+  font-family: 'Roboto';
+  font-size: 2rem;
+  font-weight: 300; }
+
+.client_name {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5rem; }
+
+.about_us_info {
+  border-radius: 3px;
+  background-color: #B3E5FC;
+  margin-right: 10rem;
+  margin-left: 10rem; }
+  .about_us_info_text {
+    margin: 2rem;
+    text-align: justify;
+    font-size: 2rem;
+    font-family: 'Raleway', sans-serif;
+    padding-bottom: 1rem; }
+    .about_us_info_text .special_text {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+      font-family: 'Raleway', sans-serif;
+      color: #039BE5;
+      text-decoration: underline;
+      text-decoration-color: white; }
+  .about_us_info_gallery .gallery_slider img {
+    margin: 0 auto; }
+
+.slick-next:before, .slick-prev:before {
+  color: black; }
+
+.slick-next:before {
+  margin-left: -50rem; }
+
+.slick-prev:before {
+  margin-right: -50rem; }
+
+.patient_portal_info {
+  border-radius: 3px;
+  background-color: #B3E5FC;
+  margin-right: 10rem;
+  margin-left: 10rem; }
+  .patient_portal_info_heading {
+    font-size: 3rem;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+    color: #039BE5;
+    text-decoration: underline;
+    text-decoration-color: white; }
+  .patient_portal_info_text {
+    padding: 2rem;
+    font-size: 1.5rem;
+    text-align: justify;
+    font-family: 'Roboto'; }
+    .patient_portal_info_text_list {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+      height: 30vh;
+      justify-content: space-around;
+      align-items: center;
+      background-color: white;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+      border-radius: 10px; }
+      .patient_portal_info_text_list .patient_portal_list {
+        list-style: none; }
+        .patient_portal_info_text_list .patient_portal_list_item {
+          font-size: 2rem;
+          font-weight: bold;
+          color: #33333D; }
+        .patient_portal_info_text_list .patient_portal_list_item > i {
+          color: #039BE5;
+          margin-right: 2rem;
+          font-size: 2rem; }
+  .patient_portal_info_insurance {
+    margin-top: 2rem;
+    margin-bottom: 2rem; }
+    .patient_portal_info_insurance_heading {
+      color: #039BE5;
+      text-align: center;
+      font-size: 3rem;
+      font-weight: bold;
+      font-family: 'Raleway', sans-serif;
+      padding-bottom: 1rem;
+      text-decoration: underline;
+      text-decoration-color: white; }
+    .patient_portal_info_insurance_details {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center; }
+      .patient_portal_info_insurance_details .insurance_details_item .item_title {
+        text-align: center;
+        font-size: 2rem;
+        font-family: 'Roboto'; }
+      .patient_portal_info_insurance_details .insurance_details_item .item_logo {
+        height: 200px;
+        width: 300px;
+        display: flex;
+        margin: 1.5rem;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+        border-radius: 10px; }
+      .patient_portal_info_insurance_details .insurance_details_item .item_logo > img {
+        background-color: white;
+        width: 100%;
+        display: inline-block;
+        height: auto;
+        border-radius: 10px; }
+    .patient_portal_info_insurance .insurance_info_text {
+      padding: 2rem;
+      font-size: 1.5rem;
+      text-align: justify;
+      font-family: 'Roboto'; }
+  .patient_portal_info_payment {
+    padding-bottom: 1rem; }
+    .patient_portal_info_payment_heading {
+      color: #039BE5;
+      text-align: center;
+      font-size: 3rem;
+      font-weight: bold;
+      font-family: 'Raleway', sans-serif;
+      padding-bottom: 1rem;
+      text-decoration: underline;
+      text-decoration-color: white; }
+    .patient_portal_info_payment_details .payment_details_text {
+      padding: 2rem;
+      font-size: 1.5rem;
+      text-align: justify;
+      font-family: 'Roboto'; }
+    .patient_portal_info_payment_details .payment_details_images {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      align-items: center; }
+    .patient_portal_info_payment_details .payment_details_image {
+      display: flex;
+      height: 150px;
+      width: 250px;
+      margin: 1.5rem;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+      border-radius: 10px; }
+    .patient_portal_info_payment_details .payment_details_image > img {
+      background-color: white;
+      width: 100%;
+      display: inline-block;
+      height: auto;
+      border-radius: 10px; }
+
+.services_page_heading {
+  text-align: center;
+  font-size: 4rem;
+  font-family: 'Righteous';
+  text-decoration: underline;
+  text-decoration-color: #33333D;
+  margin: 2rem; }
+
+.eyecare_info {
+  border-radius: 3px;
+  background-color: #B3E5FC;
+  margin-right: 10rem;
+  margin-left: 10rem; }
+  .eyecare_info_heading {
+    font-size: 2rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+    color: #039BE5;
+    margin: 2rem;
+    text-align: justify;
+    padding-top: 2rem; }
+  .eyecare_info .eyecare_service_list {
+    margin: 2rem; }
+    .eyecare_info .eyecare_service_list .eyecare_service_item {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      margin: auto;
+      padding: 2rem; }
+      .eyecare_info .eyecare_service_list .eyecare_service_item .eyecare_service_image {
+        width: 40%; }
+      .eyecare_info .eyecare_service_list .eyecare_service_item .eyecare_service_image > img {
+        width: 40rem;
+        height: 30rem;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+        border-radius: 10px; }
+      .eyecare_info .eyecare_service_list .eyecare_service_item .eyecare_service_text {
+        width: 40%; }
+        .eyecare_info .eyecare_service_list .eyecare_service_item .eyecare_service_text .eyecare_service_title {
+          text-align: center;
+          color: #c57070;
+          font-family: 'Roboto';
+          font-size: 2.5rem;
+          font-weight: 400; }
+        .eyecare_info .eyecare_service_list .eyecare_service_item .eyecare_service_text .eyecare_service_description {
+          font-family: 'Raleway', sans-serif;
+          color: black;
+          font-size: 1.5rem; }
+
+.blog {
+  position: relative;
+  height: 80vh;
+  background-color: #039BE5; }
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 100; }
+
+.text {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  max-width: 90%;
+  padding: 2em 3em;
+  text-shadow: 0px 0px 2px #131415;
+  z-index: 50; }
