@@ -1,0 +1,132 @@
+
+/////////eyecare services////
+
+.eyecare_services{
+
+}
+
+
+.services_page_heading{
+    text-align:center;
+    font-size: 4rem;
+    font-family: 'Righteous';
+    text-decoration: underline;
+    text-decoration-color: #33333D;
+    margin: 2rem;
+    
+   
+
+}
+
+.eyecare_hero_img{
+
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right,  rgba(30, 51, 48, 0.5), rgba(30, 51, 48, 0.5),),
+    url("https://images.unsplash.com/photo-1539036776273-021ec1d78bec?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7fa7157727a7d68c31909d995e5db03f");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    
+    
+}
+
+
+
+.eyecare_info{
+
+    border-radius: 3px;
+    background-color: #B3E5FC;
+    margin-right: 10rem;
+    margin-left: 10rem;
+
+    @include respond(tab-land){
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    &_heading{
+        font-size: 2rem;
+        font-family: 'Raleway', sans-serif;
+        font-weight: bold;
+        padding-top: 1rem;
+        margin-bottom: 1rem;
+        color: #039BE5;
+        margin: 2rem;
+        text-align: justify;
+        padding-top: 2rem;
+
+    }
+
+    .eyecare_service_list{
+        margin: 2rem;
+
+        .eyecare_service_item{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            margin: auto;
+            padding: 2rem;
+
+            .eyecare_service_image{
+                width: 40%;
+
+                @include respond(tab-port){
+                    width: auto;
+                }
+                
+            }
+            .eyecare_service_image> img{
+                width: 40rem;
+                height: 30rem;
+                box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+                border-radius: 10px;
+            }
+
+            .eyecare_service_text{
+              width: 40%;
+              @include respond(tab-port){
+                width: auto;
+            }
+                .eyecare_service_title{
+                    text-align: center;
+                    color: rgb(197, 112, 112);
+                    font-family: 'Roboto';
+                    font-size: 2.5rem;
+                    font-weight: 400;
+
+                }
+
+                .eyecare_service_description{
+                    font-family: 'Raleway', sans-serif;
+                    color: black;
+                    font-size: 1.5rem;
+
+                    &_list{
+    
+    
+                    }
+    
+                    &_list >li{
+    
+                    }
+    
+    
+                }
+
+            }
+
+            
+
+            
+        }
+
+    }
+    
+}
+
+
+    

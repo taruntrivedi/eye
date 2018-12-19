@@ -18,8 +18,8 @@ router.get("/eyecare_services",function(req,res){
 })
 
 
-router.get("/frames",function(req,res){
-    res.render("frames");
+router.get("/eyewear",function(req,res){
+    res.render("eyewear");
 })
 
 router.get("/blog",function(req,res){

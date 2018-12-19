@@ -5,9 +5,35 @@
   padding: 0;
   box-sizing: inherit; }
 
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   line-height: 1.6; }
@@ -16,116 +42,39 @@ body {
   font-family: infinite-stroke;
   src: url(../Infinite_Stroke.otf); }
 
-.header {
-  background-color: black;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 1rem;
-  padding-bottom: 1rem; }
-
-.brand {
-  margin-left: 3rem; }
-  .brand_logo {
-    font-size: 3rem; }
-    .brand_logo_pt1 {
-      font-family: Arial;
-      font-weight: bold;
-      text-transform: uppercase;
-      color: #F6F9FC; }
-    .brand_logo_pt2 {
-      font-family: infinite-stroke;
-      font-weight: bold;
-      color: #0B9ED0; }
-    .brand_logo_pt3 {
-      font-family: Arial;
-      font-weight: bold;
-      text-transform: uppercase;
-      color: #F6F9FC; }
-
-.contact {
-  margin-right: 3rem; }
-  .contact_number {
-    color: #F6F9FC;
-    font-size: 2rem;
-    font-family: Arial;
-    font-weight: 100; }
-
-.navbar {
-  background-color: #001122; }
-  .navbar .nav_list {
-    padding-top: .5rem;
-    padding-bottom: .5rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    list-style: none; }
-    .navbar .nav_list .nav_item {
-      font-family: 'Raleway', sans-serif;
-      font-size: 1.5rem; }
-      .navbar .nav_list .nav_item .nav_link {
-        color: #F6F9FC;
-        text-decoration: none; }
-        .navbar .nav_list .nav_item .nav_link:hover {
-          color: #0B9ED0; }
-
-.footer {
-  background-color: black; }
-  .footer_list {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    list-style: none; }
-  .footer_item {
-    margin-top: 2rem;
-    color: #F6F9FC; }
-  .footer_item > ul {
-    list-style: none;
-    text-align: center;
-    font-family: 'Raleway', sans-serif;
-    font-size: 1.5rem; }
-
-.contact_link {
-  margin: auto;
-  text-align: center;
-  width: 25%;
-  padding-bottom: 2rem;
-  margin-top: 2rem; }
-  .contact_link_list {
-    display: flex;
-    justify-content: space-around;
-    margin-right: 5rem;
-    margin-left: 10rem; }
-  .contact_link_item {
-    fill: #F6F9FC; }
-  .contact_link .contact_link_link:visited {
-    fill: #F6F9FC; }
-  .contact_link_item:hover, .contact_link_item:hover .contact_link_link svg {
-    fill: #0B9ED0; }
-
 .hero {
   margin-bottom: 2rem;
-  margin-top: 2rem;
   height: 40vh;
   width: 100%;
   position: relative; }
+  @media only screen and (max-width: 56.25em) {
+    .hero {
+      height: 30vh; } }
+  @media only screen and (max-width: 37.5em) {
+    .hero {
+      height: 25vh; } }
 
-.hero_img {
-  object-fit: cover;
+.index_hero_img {
   width: 100%;
   height: 100%;
-  z-index: 1; }
+  background: linear-gradient(to right, rgba(30, 51, 48, 0.5), rgba(30, 51, 48, 0.5)), url("https://images.unsplash.com/photo-1484245582394-064c2288eb33?ixlib=rb-0.3.5&s=f2adfeb2c33325bd1484f741e488ffb5");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
 
 .hero_tag {
-  position: absolute;
   display: block;
   z-index: 10;
-  bottom: 0;
-  left: 2rem;
-  color: #0B9ED0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: whitesmoke;
   font-family: 'Raleway', sans-serif;
-  font-size: 3rem; }
+  font-size: 4rem; }
+  @media only screen and (max-width: 56.25em) {
+    .hero_tag {
+      font-size: 3rem; } }
 
 .author_icons {
   display: none; }
@@ -134,10 +83,8 @@ body {
   height: 15rem;
   border-radius: 10px;
   margin: 5rem;
-  display: flex;
   background-color: #B3E5FC;
-  text-align: center;
-  align-items: center; }
+  text-align: center; }
 
 .about > h3 {
   font-family: 'Raleway', sans-serif;
@@ -278,6 +225,108 @@ body {
   font-family: 'Raleway', sans-serif;
   font-size: 1.5rem; }
 
+.header {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
+
+.brand {
+  margin-left: 3rem; }
+  @media only screen and (max-width: 37.5em) {
+    .brand {
+      margin-left: 0.5rem; } }
+  .brand .logo {
+    text-decoration: none; }
+  .brand_logo {
+    font-size: 3rem; }
+    @media only screen and (max-width: 37.5em) {
+      .brand_logo {
+        font-size: 2rem; } }
+    .brand_logo_pt1 {
+      font-family: Arial;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #F6F9FC; }
+    .brand_logo_pt2 {
+      font-family: infinite-stroke;
+      font-weight: bold;
+      color: #0B9ED0; }
+    .brand_logo_pt3 {
+      font-family: Arial;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #F6F9FC; }
+
+.contact {
+  margin-right: 3rem; }
+  @media only screen and (max-width: 37.5em) {
+    .contact {
+      margin-right: 0.5rem; } }
+  .contact_number {
+    color: #F6F9FC;
+    font-size: 2rem;
+    font-family: Arial;
+    font-weight: 100; }
+    @media only screen and (max-width: 37.5em) {
+      .contact_number {
+        font-size: 1rem; } }
+
+.navbar {
+  background-color: #926FE4; }
+  .navbar .nav_list {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none; }
+    .navbar .nav_list .nav_item {
+      font-family: 'Raleway', sans-serif;
+      font-size: 1.5rem; }
+      .navbar .nav_list .nav_item .nav_link {
+        color: #F6F9FC;
+        text-decoration: none; }
+        .navbar .nav_list .nav_item .nav_link:hover {
+          color: black; }
+
+.footer {
+  background-color: black; }
+  .footer_list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none; }
+  .footer_item {
+    margin-top: 2rem;
+    color: #F6F9FC; }
+  .footer_item > ul {
+    list-style: none;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem; }
+
+.contact_link {
+  margin: auto;
+  text-align: center;
+  width: 25%;
+  padding-bottom: 2rem;
+  margin-top: 2rem; }
+  .contact_link_list {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 5rem;
+    margin-left: 10rem; }
+  .contact_link_item {
+    fill: #F6F9FC; }
+  .contact_link .contact_link_link:visited {
+    fill: #F6F9FC; }
+  .contact_link_item:hover, .contact_link_item:hover .contact_link_link svg {
+    fill: #0B9ED0; }
+
 .about_us_info {
   border-radius: 3px;
   background-color: #B3E5FC;
@@ -299,6 +348,15 @@ body {
   .about_us_info_gallery .gallery_slider img {
     margin: 0 auto; }
 
+.about_hero_img {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: linear-gradient(to right, rgba(30, 51, 48, 0.5), rgba(30, 51, 48, 0.5)), url("https://images.unsplash.com/photo-1519377661616-bbec03d2bd68?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4d4b10757dbca8caac918ee67a50b759&auto=format&fit=crop&w=1350&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
 .slick-next:before, .slick-prev:before {
   color: black; }
 
@@ -308,11 +366,24 @@ body {
 .slick-prev:before {
   margin-right: -50rem; }
 
+.patient_portal .patient_hero_img {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: linear-gradient(to right, rgba(30, 51, 48, 0.5), rgba(30, 51, 48, 0.5)), url("https://images.unsplash.com/photo-1460904577954-8fadb262612c?ixlib=rb-0.3.5&s=5bcb5490cd0e0bc4e23907eea361e98b&auto=format&fit=crop&w=1540&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
 .patient_portal_info {
   border-radius: 3px;
   background-color: #B3E5FC;
   margin-right: 10rem;
   margin-left: 10rem; }
+  @media only screen and (max-width: 56.25em) {
+    .patient_portal_info {
+      margin-right: 0;
+      margin-left: 0; } }
   .patient_portal_info_heading {
     font-size: 3rem;
     font-family: 'Raleway', sans-serif;
@@ -371,8 +442,8 @@ body {
         font-size: 2rem;
         font-family: 'Roboto'; }
       .patient_portal_info_insurance_details .insurance_details_item .item_logo {
-        height: 200px;
-        width: 300px;
+        height: 100px;
+        width: 200px;
         display: flex;
         margin: 1.5rem;
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
@@ -411,8 +482,8 @@ body {
       align-items: center; }
     .patient_portal_info_payment_details .payment_details_image {
       display: flex;
-      height: 150px;
-      width: 250px;
+      height: 75px;
+      width: 150px;
       margin: 1.5rem;
       box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
       border-radius: 10px; }
@@ -431,11 +502,23 @@ body {
   text-decoration-color: #33333D;
   margin: 2rem; }
 
+.eyecare_hero_img {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(30, 51, 48, 0.5), rgba(30, 51, 48, 0.5)), url("https://images.unsplash.com/photo-1539036776273-021ec1d78bec?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7fa7157727a7d68c31909d995e5db03f");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
 .eyecare_info {
   border-radius: 3px;
   background-color: #B3E5FC;
   margin-right: 10rem;
   margin-left: 10rem; }
+  @media only screen and (max-width: 75em) {
+    .eyecare_info {
+      margin-right: 0;
+      margin-left: 0; } }
   .eyecare_info_heading {
     font-size: 2rem;
     font-family: 'Raleway', sans-serif;
@@ -458,6 +541,9 @@ body {
       padding: 2rem; }
       .eyecare_info .eyecare_service_list .eyecare_service_item .eyecare_service_image {
         width: 40%; }
+        @media only screen and (max-width: 56.25em) {
+          .eyecare_info .eyecare_service_list .eyecare_service_item .eyecare_service_image {
+            width: auto; } }
       .eyecare_info .eyecare_service_list .eyecare_service_item .eyecare_service_image > img {
         width: 40rem;
         height: 30rem;
@@ -465,6 +551,9 @@ body {
         border-radius: 10px; }
       .eyecare_info .eyecare_service_list .eyecare_service_item .eyecare_service_text {
         width: 40%; }
+        @media only screen and (max-width: 56.25em) {
+          .eyecare_info .eyecare_service_list .eyecare_service_item .eyecare_service_text {
+            width: auto; } }
         .eyecare_info .eyecare_service_list .eyecare_service_item .eyecare_service_text .eyecare_service_title {
           text-align: center;
           color: #c57070;
@@ -475,6 +564,15 @@ body {
           font-family: 'Raleway', sans-serif;
           color: black;
           font-size: 1.5rem; }
+
+.eyewear_hero_img {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: linear-gradient(to right, rgba(30, 51, 48, 0.5), rgba(30, 51, 48, 0.5)), url("https://images.unsplash.com/photo-1534078477103-9f6a18b3a5e2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=29d25f3ebc16789c466a3533a034f1a7&auto=format&fit=crop&w=1350&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
 
 .blog {
   position: relative;
