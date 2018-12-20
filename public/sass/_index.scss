@@ -23,10 +23,9 @@
 
 
 .index_hero_img{
-
+    z-index: 5 ;
     width: 100%;
     height: 100%;
-
     background: linear-gradient(to right,  rgba(30, 51, 48, 0.5), rgba(30, 51, 48, 0.5),),
     url("https://images.unsplash.com/photo-1484245582394-064c2288eb33?ixlib=rb-0.3.5&s=f2adfeb2c33325bd1484f741e488ffb5");
     background-repeat: no-repeat;
@@ -38,13 +37,14 @@
 }
 
 .hero_tag{
-    display: block;
+    display: inline-block;
     z-index: 10;
+    width: 100%;
+    text-align: center;
     @include absCenter;
     color: whitesmoke ;
     font-family: 'Raleway', sans-serif;
     font-size: 4rem;
-
     @include respond(tab-port){
         font-size: 3rem;
     }
@@ -56,19 +56,21 @@
     display: none;
 }
 .about{
-    height: 15rem;;
     border-radius: 10px;
     margin: 5rem;
-
-    background-color: #B3E5FC;
     text-align: center;
+
+    .para_section{
+        @include respond(tab-port){
+            display: none;
+        }
+    }
  }
  .about>h3{
      font-family: 'Raleway', sans-serif;
      font-size: 1.5rem;
      font-weight: bold;
-     background-color: #B3E5FC;
-     color: #039BE5;
+     color: #926FE4;
      
  
  }
@@ -89,6 +91,18 @@
     height: 70rem;
     width: 50rem;
     border-radius: 75px;
+    @include respond(tab-land){
+        height: 60rem;
+        width: 40rem;
+        margin-left: 0;
+    }
+
+    @include respond(tab-port){
+        height: 50rem;
+        width: 300rem;
+        margin-right: 0;
+    }
+    
 
 }
 .info_img1>img{
@@ -118,6 +132,17 @@
     width: 50rem;
     border-radius: 5px;
     border-radius: 75px;
+    @include respond(tab-land){
+        height: 60rem;
+        width: 40rem;
+        margin-right: 0;
+    }
+
+    @include respond(tab-port){
+        height: 50rem;
+        width: 300rem;
+        margin-right: 0;
+    }
 
 }
 .info_img2>img{
@@ -131,6 +156,19 @@
 .info_detail{
     height: 60rem;
     width: 40rem;
+    
+    @include respond(tab-land){
+        height: 50rem;
+        width: 30rem;
+    }
+
+    @include respond(phone){
+        height: auto;
+        width: auto;
+        margin: 2rem;
+    }
+
+    
 
 
 }
@@ -139,6 +177,7 @@
     font-size: 4rem;
     margin-bottom: 1rem;
     font-family: 'Raleway', sans-serif;
+    color: #0B9ED0;
 
 }
 
@@ -161,7 +200,7 @@ background-color: #B3E5FC;
         font-family: 'Raleway', sans-serif;
         font-weight: bold;
         margin-bottom: 5rem;
-        color: #039BE5;
+        color: #E56565;
     }
 
     &_section{
@@ -189,7 +228,7 @@ background-color: #B3E5FC;
                 font-family: 'Raleway', sans-serif;
                 font-weight: bold;
                 margin-bottom: 2rem;
-                color: #039BE5;
+                color: rgb(248, 177, 23);
             }
             &_list{
               list-style: none;

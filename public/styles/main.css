@@ -55,6 +55,7 @@ body {
       height: 25vh; } }
 
 .index_hero_img {
+  z-index: 5;
   width: 100%;
   height: 100%;
   background: linear-gradient(to right, rgba(30, 51, 48, 0.5), rgba(30, 51, 48, 0.5)), url("https://images.unsplash.com/photo-1484245582394-064c2288eb33?ixlib=rb-0.3.5&s=f2adfeb2c33325bd1484f741e488ffb5");
@@ -63,8 +64,10 @@ body {
   background-position: center; }
 
 .hero_tag {
-  display: block;
+  display: inline-block;
   z-index: 10;
+  width: 100%;
+  text-align: center;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -80,18 +83,18 @@ body {
   display: none; }
 
 .about {
-  height: 15rem;
   border-radius: 10px;
   margin: 5rem;
-  background-color: #B3E5FC;
   text-align: center; }
+  @media only screen and (max-width: 56.25em) {
+    .about .para_section {
+      display: none; } }
 
 .about > h3 {
   font-family: 'Raleway', sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
-  background-color: #B3E5FC;
-  color: #039BE5; }
+  color: #926FE4; }
 
 .infobar1 {
   display: flex;
@@ -107,6 +110,16 @@ body {
   height: 70rem;
   width: 50rem;
   border-radius: 75px; }
+  @media only screen and (max-width: 75em) {
+    .info_img1 {
+      height: 60rem;
+      width: 40rem;
+      margin-left: 0; } }
+  @media only screen and (max-width: 56.25em) {
+    .info_img1 {
+      height: 50rem;
+      width: 300rem;
+      margin-right: 0; } }
 
 .info_img1 > img {
   object-fit: cover;
@@ -129,6 +142,16 @@ body {
   width: 50rem;
   border-radius: 5px;
   border-radius: 75px; }
+  @media only screen and (max-width: 75em) {
+    .info_img2 {
+      height: 60rem;
+      width: 40rem;
+      margin-right: 0; } }
+  @media only screen and (max-width: 56.25em) {
+    .info_img2 {
+      height: 50rem;
+      width: 300rem;
+      margin-right: 0; } }
 
 .info_img2 > img {
   object-fit: cover;
@@ -139,11 +162,21 @@ body {
 .info_detail {
   height: 60rem;
   width: 40rem; }
+  @media only screen and (max-width: 75em) {
+    .info_detail {
+      height: 50rem;
+      width: 30rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .info_detail {
+      height: auto;
+      width: auto;
+      margin: 2rem; } }
 
 .info_heading {
   font-size: 4rem;
   margin-bottom: 1rem;
-  font-family: 'Raleway', sans-serif; }
+  font-family: 'Raleway', sans-serif;
+  color: #0B9ED0; }
 
 .info_text {
   font-size: 2rem;
@@ -160,7 +193,7 @@ body {
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
     margin-bottom: 5rem;
-    color: #039BE5; }
+    color: #E56565; }
   .services_section {
     display: flex;
     flex-wrap: wrap;
@@ -181,7 +214,7 @@ body {
         font-family: 'Raleway', sans-serif;
         font-weight: bold;
         margin-bottom: 2rem;
-        color: #039BE5; }
+        color: #f8b117; }
       .services_section .section_list {
         list-style: none;
         margin-bottom: 3rem; }
@@ -228,6 +261,8 @@ body {
 .header {
   background-color: black;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding-top: 1rem;
@@ -272,7 +307,7 @@ body {
     font-weight: 100; }
     @media only screen and (max-width: 37.5em) {
       .contact_number {
-        font-size: 1rem; } }
+        font-size: 2rem; } }
 
 .navbar {
   background-color: #926FE4; }
@@ -315,11 +350,12 @@ body {
   width: 25%;
   padding-bottom: 2rem;
   margin-top: 2rem; }
+  @media only screen and (max-width: 56.25em) {
+    .contact_link {
+      width: 50%; } }
   .contact_link_list {
     display: flex;
-    justify-content: space-around;
-    margin-right: 5rem;
-    margin-left: 10rem; }
+    justify-content: space-around; }
   .contact_link_item {
     fill: #F6F9FC; }
   .contact_link .contact_link_link:visited {
@@ -332,6 +368,10 @@ body {
   background-color: #B3E5FC;
   margin-right: 10rem;
   margin-left: 10rem; }
+  @media only screen and (max-width: 56.25em) {
+    .about_us_info {
+      margin-right: 0;
+      margin-left: 0; } }
   .about_us_info_text {
     margin: 2rem;
     text-align: justify;
@@ -342,11 +382,11 @@ body {
       font-size: 4rem;
       margin-bottom: 1rem;
       font-family: 'Raleway', sans-serif;
-      color: #039BE5;
-      text-decoration: underline;
-      text-decoration-color: white; }
-  .about_us_info_gallery .gallery_slider img {
-    margin: 0 auto; }
+      color: #926FE4; }
+  .about_us_info_gallery .gallery_slider_img {
+    margin: 0 auto;
+    height: 50rem;
+    width: 50rem; }
 
 .about_hero_img {
   width: 100%;
@@ -361,10 +401,18 @@ body {
   color: black; }
 
 .slick-next:before {
-  margin-left: -50rem; }
+  margin-left: -40rem; }
+  @media only screen and (max-width: 56.25em) {
+    .slick-next:before {
+      margin-left: -10rem;
+      display: none; } }
 
 .slick-prev:before {
-  margin-right: -50rem; }
+  margin-right: -40rem; }
+  @media only screen and (max-width: 56.25em) {
+    .slick-prev:before {
+      margin-right: -10rem;
+      display: none; } }
 
 .patient_portal .patient_hero_img {
   width: 100%;

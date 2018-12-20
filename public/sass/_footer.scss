@@ -36,12 +36,13 @@
     width: 25%;
     padding-bottom: 2rem;
     margin-top: 2rem;
+    @include respond(tab-port){
+        width: 50%;
+    }
    
    &_list{
        display: flex;
        justify-content: space-around;
-       margin-right: 5rem;
-       margin-left: 10rem;
    }
 
    &_item{

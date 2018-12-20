@@ -6,6 +6,12 @@
         background-color: #B3E5FC;
         margin-right: 10rem;
         margin-left: 10rem;
+
+        @include respond(tab-port){
+            margin-right: 0;
+            margin-left: 0;
+        }
+
         &_text{
             margin: 2rem;
             text-align: justify;
@@ -13,18 +19,18 @@
             font-size: 4rem;
             margin-bottom: 1rem;
             font-family: 'Raleway', sans-serif;
-            color: #039BE5;
-            text-decoration: underline;
-            text-decoration-color: white;
+            color: #926FE4;
          }
          font-size: 2rem;
          font-family: 'Raleway', sans-serif;
          padding-bottom: 1rem;
         }
         &_gallery{
-            .gallery_slider img{
-                margin: 0 auto;
 
+            .gallery_slider_img{
+                margin: 0 auto;
+                height: 50rem;
+                width: 50rem;
             }
             
             
@@ -55,10 +61,23 @@
 }
 
 .slick-next:before{
-  margin-left: -50rem;
+  margin-left: -40rem;
+  
+
+  @include respond(tab-port){
+    margin-left: -10rem;
+    display: none;
+}
+
 }
 .slick-prev:before{
-    margin-right: -50rem;
+    margin-right: -40rem;
+
+    @include respond(tab-port){
+        margin-right: -10rem;
+        display: none;
+    }
+    
 }
 
 
