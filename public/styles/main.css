@@ -79,6 +79,40 @@ body {
     .hero_tag {
       font-size: 3rem; } }
 
+.index_tag {
+  display: inline-block;
+  z-index: 10;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgba(245, 245, 245, 0.836);
+  font-family: 'Raleway', sans-serif;
+  font-size: 5rem; }
+  @media only screen and (max-width: 56.25em) {
+    .index_tag {
+      font-size: 3rem; } }
+
+.index_gallery {
+  position: relative; }
+  .index_gallery .slick-next:before,
+  .index_gallery .slick-prev:before {
+    display: none; }
+  .index_gallery .gallery_slider2_div {
+    margin-left: .5rem;
+    margin-right: .5rem;
+    height: 40vh;
+    width: auto; }
+    @media only screen and (max-width: 56.25em) {
+      .index_gallery .gallery_slider2_div {
+        height: 30vh; } }
+  .index_gallery .gallery_slider2_img {
+    height: 100%;
+    width: 100%;
+    filter: brightness(50%); }
+
 .author_icons {
   display: none; }
 
@@ -95,6 +129,9 @@ body {
   font-size: 1.5rem;
   font-weight: bold;
   color: #926FE4; }
+  @media only screen and (max-width: 56.25em) {
+    .about > h3 {
+      font-size: 2rem; } }
 
 .infobar1 {
   display: flex;
@@ -107,8 +144,8 @@ body {
 
 .info_img1 {
   margin-left: 20rem;
-  height: 70rem;
-  width: 50rem;
+  height: 60rem;
+  width: 40rem;
   border-radius: 75px; }
   @media only screen and (max-width: 75em) {
     .info_img1 {
@@ -118,7 +155,7 @@ body {
   @media only screen and (max-width: 56.25em) {
     .info_img1 {
       height: 50rem;
-      width: 300rem;
+      width: 30rem;
       margin-right: 0; } }
 
 .info_img1 > img {
@@ -138,8 +175,8 @@ body {
 
 .info_img2 {
   margin-right: 20rem;
-  height: 70rem;
-  width: 50rem;
+  height: 60rem;
+  width: 40rem;
   border-radius: 5px;
   border-radius: 75px; }
   @media only screen and (max-width: 75em) {
@@ -150,7 +187,7 @@ body {
   @media only screen and (max-width: 56.25em) {
     .info_img2 {
       height: 50rem;
-      width: 300rem;
+      width: 30rem;
       margin-right: 0; } }
 
 .info_img2 > img {
@@ -184,16 +221,9 @@ body {
 
 .services {
   margin-bottom: 5rem;
+  padding: 2rem;
   margin-top: 5rem;
   background-color: #B3E5FC; }
-  .services_heading {
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 5rem;
-    font-family: 'Raleway', sans-serif;
-    font-weight: bold;
-    margin-bottom: 5rem;
-    color: #E56565; }
   .services_section {
     display: flex;
     flex-wrap: wrap;
@@ -213,11 +243,10 @@ body {
         font-size: 2rem;
         font-family: 'Raleway', sans-serif;
         font-weight: bold;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
         color: #f8b117; }
       .services_section .section_list {
-        list-style: none;
-        margin-bottom: 3rem; }
+        list-style: none; }
       .services_section .section_list > li {
         font-family: 'Raleway', sans-serif;
         font-size: 1.8rem; }
@@ -229,7 +258,7 @@ body {
 #slideshow {
   position: relative;
   height: 20rem;
-  background-color: #33333D;
+  background-color: #926FE4;
   text-align: center;
   display: flex;
   align-items: center;
@@ -239,7 +268,7 @@ body {
 #slideshow > div {
   text-align: center;
   position: absolute;
-  background-color: #33333D;
+  background-color: #926FE4;
   width: 100%; }
 
 .client {
@@ -255,8 +284,9 @@ body {
   font-weight: 300; }
 
 .client_name {
-  font-family: 'Raleway', sans-serif;
-  font-size: 1.5rem; }
+  font-family: infinite-stroke;
+  font-size: 1.5rem;
+  color: black; }
 
 .header {
   background-color: black;
@@ -365,7 +395,7 @@ body {
 
 .about_us_info {
   border-radius: 3px;
-  background-color: #B3E5FC;
+  background-color: rgba(198, 237, 255, 0.404);
   margin-right: 10rem;
   margin-left: 10rem; }
   @media only screen and (max-width: 56.25em) {
@@ -375,13 +405,12 @@ body {
   .about_us_info_text {
     margin: 2rem;
     text-align: justify;
-    font-size: 2rem;
-    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+    font-family: 'Raleway', sans-serif;
     padding-bottom: 1rem; }
     .about_us_info_text .special_text {
       font-size: 4rem;
-      margin-bottom: 1rem;
-      font-family: 'Raleway', sans-serif;
+      font-family: infinite-stroke;
       color: #926FE4; }
   .about_us_info_gallery .gallery_slider_img {
     margin: 0 auto;
@@ -397,7 +426,8 @@ body {
   background-size: cover;
   background-position: center; }
 
-.slick-next:before, .slick-prev:before {
+.slick-next:before,
+.slick-prev:before {
   color: black; }
 
 .slick-next:before {
@@ -414,133 +444,199 @@ body {
       margin-right: -10rem;
       display: none; } }
 
-.patient_portal .patient_hero_img {
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  background: linear-gradient(to right, rgba(30, 51, 48, 0.5), rgba(30, 51, 48, 0.5)), url("https://images.unsplash.com/photo-1460904577954-8fadb262612c?ixlib=rb-0.3.5&s=5bcb5490cd0e0bc4e23907eea361e98b&auto=format&fit=crop&w=1540&q=80");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center; }
-
-.patient_portal_info {
-  border-radius: 3px;
-  background-color: #B3E5FC;
-  margin-right: 10rem;
-  margin-left: 10rem; }
-  @media only screen and (max-width: 56.25em) {
-    .patient_portal_info {
-      margin-right: 0;
-      margin-left: 0; } }
-  .patient_portal_info_heading {
-    font-size: 3rem;
-    font-family: 'Raleway', sans-serif;
-    text-align: center;
-    font-weight: bold;
-    padding-top: 1rem;
+.staff_info {
+  margin: 2rem;
+  padding-bottom: 2rem; }
+  .staff_info_heading {
+    font-size: 4rem;
     margin-bottom: 1rem;
-    color: #039BE5;
-    text-decoration: underline;
-    text-decoration-color: white; }
-  .patient_portal_info_text {
-    padding: 2rem;
+    font-family: infinite-stroke;
+    color: #926FE4;
+    text-align: center; }
+  .staff_info_content .staff_member {
+    width: 75%;
+    margin: 2rem auto;
+    box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 3px;
+    padding: 4rem;
+    padding-left: 9rem;
     font-size: 1.5rem;
-    text-align: justify;
-    font-family: 'Roboto'; }
-    .patient_portal_info_text_list {
-      display: flex;
-      flex-wrap: wrap;
-      margin-top: 3rem;
-      margin-bottom: 3rem;
-      height: 30vh;
-      justify-content: space-around;
-      align-items: center;
-      background-color: white;
-      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-      border-radius: 10px; }
-      .patient_portal_info_text_list .patient_portal_list {
-        list-style: none; }
-        .patient_portal_info_text_list .patient_portal_list_item {
-          font-size: 2rem;
-          font-weight: bold;
-          color: #33333D; }
-        .patient_portal_info_text_list .patient_portal_list_item > i {
-          color: #039BE5;
-          margin-right: 2rem;
-          font-size: 2rem; }
-  .patient_portal_info_insurance {
-    margin-top: 2rem;
-    margin-bottom: 2rem; }
-    .patient_portal_info_insurance_heading {
-      color: #039BE5;
-      text-align: center;
+    transform: skewX(-12deg); }
+    @media only screen and (max-width: 56.25em) {
+      .staff_info_content .staff_member {
+        width: 100%;
+        padding: 4rem;
+        padding-left: 7rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .staff_info_content .staff_member {
+        transform: skewX(0); } }
+    .staff_info_content .staff_member_image {
+      width: 20rem;
+      height: 20rem;
+      float: left;
+      transform: translateX(-2rem) skewX(12deg);
+      position: relative;
+      overflow: hidden;
+      border-radius: 50%; }
+      @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+        .staff_info_content .staff_member_image {
+          -webkit-clip-path: circle(50% at 50% 50%);
+          clip-path: circle(50% at 50% 50%);
+          -webkit-shape-outside: circle(50% at 50% 50%);
+          shape-outside: circle(50% at 50% 50%);
+          border-radius: none; } }
+      @media only screen and (max-width: 37.5em) {
+        .staff_info_content .staff_member_image {
+          transform: translateX(-2rem) skewX(0); } }
+    .staff_info_content .staff_member .staff_member_image > img {
+      height: 100%;
+      width: auto;
+      transform: translateX(-0.5rem) scale(1.3);
+      backface-visibility: hidden;
+      transition: all .5s; }
+    .staff_info_content .staff_member_details {
+      transform: skewX(12deg); }
+      @media only screen and (max-width: 37.5em) {
+        .staff_info_content .staff_member_details {
+          transform: skewX(0); } }
+      .staff_info_content .staff_member_details .staff_member_name {
+        margin-top: 2rem;
+        color: #039BE5;
+        font-family: 'Raleway',sans-serif;
+        font-weight: bold;
+        font-size: 2rem; }
+      .staff_info_content .staff_member_details .staff_member_text {
+        font-size: 1.5rem;
+        font-family: 'Roboto';
+        color: white;
+        text-align: justify;
+        font-weight: lighter; }
+    .staff_info_content .staff_member:hover .staff_member_image > img {
+      transform: translateX(-0.5rem) scale(1); }
+
+.patient_portal {
+  margin-bottom: 2rem; }
+  .patient_portal .patient_hero_img {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: linear-gradient(to right, rgba(30, 51, 48, 0.5), rgba(30, 51, 48, 0.5)), url("https://images.unsplash.com/photo-1460904577954-8fadb262612c?ixlib=rb-0.3.5&s=5bcb5490cd0e0bc4e23907eea361e98b&auto=format&fit=crop&w=1540&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; }
+  .patient_portal_info {
+    border-radius: 3px;
+    background-color: rgba(198, 237, 255, 0.404);
+    margin-right: 10rem;
+    margin-left: 10rem; }
+    @media only screen and (max-width: 56.25em) {
+      .patient_portal_info {
+        margin-right: 0;
+        margin-left: 0; } }
+    .patient_portal_info_heading {
       font-size: 3rem;
-      font-weight: bold;
       font-family: 'Raleway', sans-serif;
-      padding-bottom: 1rem;
-      text-decoration: underline;
-      text-decoration-color: white; }
-    .patient_portal_info_insurance_details {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      align-items: center; }
-      .patient_portal_info_insurance_details .insurance_details_item .item_title {
-        text-align: center;
-        font-size: 2rem;
-        font-family: 'Roboto'; }
-      .patient_portal_info_insurance_details .insurance_details_item .item_logo {
-        height: 100px;
-        width: 200px;
+      text-align: center;
+      font-weight: bold;
+      padding-top: 1rem;
+      margin-bottom: 1rem;
+      color: #926FE4; }
+    .patient_portal_info_text {
+      padding: 2rem;
+      font-size: 1.5rem;
+      text-align: justify;
+      font-family: 'Roboto'; }
+      .patient_portal_info_text_list {
         display: flex;
+        flex-wrap: wrap;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        height: 30vh;
+        justify-content: space-around;
+        align-items: center;
+        background-color: white;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+        border-radius: 10px; }
+        .patient_portal_info_text_list .patient_portal_list {
+          list-style: none; }
+          .patient_portal_info_text_list .patient_portal_list_item {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #33333D; }
+          .patient_portal_info_text_list .patient_portal_list_item > i {
+            color: #039BE5;
+            margin-right: 2rem;
+            font-size: 2rem; }
+    .patient_portal_info_insurance {
+      margin-top: 2rem;
+      margin-bottom: 2rem; }
+      .patient_portal_info_insurance_heading {
+        color: #926FE4;
+        text-align: center;
+        font-size: 3rem;
+        font-weight: bold;
+        font-family: 'Raleway', sans-serif;
+        padding-bottom: 1rem; }
+      .patient_portal_info_insurance_details {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center; }
+        .patient_portal_info_insurance_details .insurance_details_item .item_title {
+          text-align: center;
+          font-size: 2rem;
+          font-family: 'Roboto'; }
+        .patient_portal_info_insurance_details .insurance_details_item .item_logo {
+          height: 100px;
+          width: 200px;
+          display: flex;
+          margin: 1.5rem;
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+          border-radius: 10px; }
+        .patient_portal_info_insurance_details .insurance_details_item .item_logo > img {
+          background-color: white;
+          width: 100%;
+          display: inline-block;
+          height: auto;
+          border-radius: 10px; }
+      .patient_portal_info_insurance .insurance_info_text {
+        padding: 2rem;
+        font-size: 1.5rem;
+        text-align: justify;
+        font-family: 'Roboto'; }
+    .patient_portal_info_payment {
+      padding-bottom: 1rem; }
+      .patient_portal_info_payment_heading {
+        color: #926FE4;
+        text-align: center;
+        font-size: 3rem;
+        font-weight: bold;
+        font-family: 'Raleway', sans-serif;
+        padding-bottom: 1rem; }
+      .patient_portal_info_payment_details .payment_details_text {
+        padding: 2rem;
+        font-size: 1.5rem;
+        text-align: justify;
+        font-family: 'Roboto'; }
+      .patient_portal_info_payment_details .payment_details_images {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center; }
+      .patient_portal_info_payment_details .payment_details_image {
+        display: flex;
+        height: 75px;
+        width: 150px;
         margin: 1.5rem;
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
         border-radius: 10px; }
-      .patient_portal_info_insurance_details .insurance_details_item .item_logo > img {
+      .patient_portal_info_payment_details .payment_details_image > img {
         background-color: white;
         width: 100%;
         display: inline-block;
         height: auto;
         border-radius: 10px; }
-    .patient_portal_info_insurance .insurance_info_text {
-      padding: 2rem;
-      font-size: 1.5rem;
-      text-align: justify;
-      font-family: 'Roboto'; }
-  .patient_portal_info_payment {
-    padding-bottom: 1rem; }
-    .patient_portal_info_payment_heading {
-      color: #039BE5;
-      text-align: center;
-      font-size: 3rem;
-      font-weight: bold;
-      font-family: 'Raleway', sans-serif;
-      padding-bottom: 1rem;
-      text-decoration: underline;
-      text-decoration-color: white; }
-    .patient_portal_info_payment_details .payment_details_text {
-      padding: 2rem;
-      font-size: 1.5rem;
-      text-align: justify;
-      font-family: 'Roboto'; }
-    .patient_portal_info_payment_details .payment_details_images {
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: space-around;
-      align-items: center; }
-    .patient_portal_info_payment_details .payment_details_image {
-      display: flex;
-      height: 75px;
-      width: 150px;
-      margin: 1.5rem;
-      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-      border-radius: 10px; }
-    .patient_portal_info_payment_details .payment_details_image > img {
-      background-color: white;
-      width: 100%;
-      display: inline-block;
-      height: auto;
-      border-radius: 10px; }
 
 .services_page_heading {
   text-align: center;
@@ -560,7 +656,7 @@ body {
 
 .eyecare_info {
   border-radius: 3px;
-  background-color: #B3E5FC;
+  background-color: rgba(198, 237, 255, 0.404);
   margin-right: 10rem;
   margin-left: 10rem; }
   @media only screen and (max-width: 75em) {
@@ -571,11 +667,10 @@ body {
     font-size: 2rem;
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
-    padding-top: 1rem;
     margin-bottom: 1rem;
-    color: #039BE5;
+    color: #926FE4;
     margin: 2rem;
-    text-align: justify;
+    text-align: center;
     padding-top: 2rem; }
   .eyecare_info .eyecare_service_list {
     margin: 2rem; }
@@ -604,7 +699,7 @@ body {
             width: auto; } }
         .eyecare_info .eyecare_service_list .eyecare_service_item .eyecare_service_text .eyecare_service_title {
           text-align: center;
-          color: #c57070;
+          color: #0B9ED0;
           font-family: 'Roboto';
           font-size: 2.5rem;
           font-weight: 400; }

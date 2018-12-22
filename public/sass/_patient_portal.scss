@@ -2,6 +2,8 @@
 
 .patient_portal{
 
+    margin-bottom: 2rem;
+
     .patient_hero_img{
 
         width: 100%;
@@ -21,7 +23,7 @@
     &_info{
 
         border-radius: 3px;
-        background-color: #B3E5FC;
+        background-color: rgba(198, 237, 255, 0.404);
         margin-right: 10rem;
         margin-left: 10rem;
 
@@ -38,9 +40,7 @@
             font-weight: bold;
             padding-top: 1rem;
             margin-bottom: 1rem;
-            color: #039BE5;
-            text-decoration: underline;
-            text-decoration-color: white;
+            color: #926FE4;
         }
 
         &_text{
@@ -88,14 +88,12 @@
             margin-bottom: 2rem;
 
             &_heading{
-                color: #039BE5;
+                color: #926FE4;
                 text-align: center;
                 font-size: 3rem;
                 font-weight: bold;
                 font-family: 'Raleway', sans-serif;
                 padding-bottom: 1rem;
-                text-decoration: underline;
-                text-decoration-color: white;
                 
             }
 
@@ -147,15 +145,12 @@
             padding-bottom: 1rem;
 
             &_heading{
-                color: #039BE5;
+                color: #926FE4;
                 text-align: center;
                 font-size: 3rem;
                 font-weight: bold;
                 font-family: 'Raleway', sans-serif;
                 padding-bottom: 1rem;
-                text-decoration: underline;
-                text-decoration-color: white;
-
             }
 
             &_details{
