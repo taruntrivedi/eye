@@ -10,7 +10,7 @@
         height: 100%;
         z-index: 1;
         background: linear-gradient(to right,  rgba(30, 51, 48, 0.5), rgba(30, 51, 48, 0.5),),
-        url("https://images.unsplash.com/photo-1460904577954-8fadb262612c?ixlib=rb-0.3.5&s=5bcb5490cd0e0bc4e23907eea361e98b&auto=format&fit=crop&w=1540&q=80");
+        url("/images/designer.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -23,7 +23,7 @@
     &_info{
 
         border-radius: 3px;
-        background-color: rgba(198, 237, 255, 0.404);
+        background-color: rgb(214, 224, 228);
         margin-right: 10rem;
         margin-left: 10rem;
 

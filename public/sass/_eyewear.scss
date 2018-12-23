@@ -4,11 +4,113 @@
     height: 100%;
     z-index: 1;
     background: linear-gradient(to right,  rgba(30, 51, 48, 0.5), rgba(30, 51, 48, 0.5),),
-    url("https://images.unsplash.com/photo-1534078477103-9f6a18b3a5e2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=29d25f3ebc16789c466a3533a034f1a7&auto=format&fit=crop&w=1350&q=80");
+    url("https://www.carreraworld.com/content/dam/carrerasite/01_Home/01_FW18/Banner_SIGNATURE.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center top;
     
     
     
+}
+
+.gallery {
+    background-color: #f9f7f6;
+    grid-column: full-start / full-end;
+
+    display: grid;
+    /*grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(7, 5vw);*/
+    grid-template: repeat(7, 5vw) / repeat(8, 1fr);
+
+
+    grid-gap: 1.5rem;
+    padding: 1.5rem;
+
+    &__item {
+        &--1 {
+            grid-row: 1 / span 2;
+            grid-column: 1 / span 2;
+        }
+
+        &--2 {
+            grid-row: 1 / span 3;
+            grid-column: 3 / span 3;
+        }
+
+        &--3 {
+            grid-row: 1 / span 2;
+            grid-column: 6 / 7;
+        }
+
+        &--4 {
+            grid-row: 1 / span 2;
+            grid-column: 7 / -1;
+        }
+
+        &--5 {
+            grid-row: 3 / span 3;
+            grid-column: 1 / span 2;
+        }
+
+        &--6 {
+            grid-row: 4 / span 2;
+            grid-column: 3 / span 2;
+        }
+
+        &--7 {
+            grid-row: 4 / 5;
+            grid-column: 5 / 6;
+        }
+
+        &--8 {
+            grid-row: 3 / span 2;
+            grid-column: 6 / span 2;
+        }
+
+        &--9 {
+            grid-row: 3 / span 3;
+            grid-column: 8 / -1;
+        }
+
+        &--10 {
+            grid-row: 6 / span 2;
+            grid-column: 1 / 2;
+        }
+
+        &--11 {
+            grid-row: 6 / span 2;
+            grid-column: 2 / span 2;
+        }
+
+        &--12 {
+            grid-row: 6 / span 2;
+            grid-column: 4 / 5;
+        }
+
+        &--13 {
+            grid-row: 5 / span 3;
+            grid-column: 5 / span 3;
+        }
+
+        &--14 {
+            grid-row: 6 / span 2;
+            grid-column: 8 / -1;
+        }
+        &--15 {
+            grid-row: 8 / span 2;
+            grid-column: 7 / -1;
+        } 
+         &--16 {
+            grid-row: 8 / span 2;
+            grid-column: 1 / 7;
+        }  
+         
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
 }

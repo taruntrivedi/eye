@@ -40,8 +40,9 @@
     display: inline-block;
     z-index: 10;
     width: 100%;
-    text-align: center;
-    @include absCenter;
+    position: absolute;
+    bottom: 5%;
+    left:2%;
     color: whitesmoke ;
     font-family: 'Raleway', sans-serif;
     font-size: 4rem;
@@ -92,7 +93,7 @@
     .gallery_slider2_img {
         height: 100%;
         width: 100%;
-        filter: brightness(50%);
+        filter: brightness(80%);
     }
 
 
@@ -149,6 +150,7 @@
         height: 50rem;
         width: 30rem;
         margin-right: 0;
+        border-radius: 25px;
     }
     
 
@@ -158,6 +160,11 @@
     width: 100%;
     height: 100%;
     border-radius: 75px;
+
+    @include respond(tab-port){
+        border-radius: 25px;
+    }
+    
     
 
 }
@@ -171,6 +178,9 @@
     margin-right: 5rem;
     margin-left: 5rem;
     margin-top: 5rem;
+    @include respond(tab-port){
+       flex-wrap: wrap-reverse;
+    }
 
 }
 
@@ -178,7 +188,6 @@
     margin-right: 20rem;
     height: 60rem;
     width: 40rem;
-    border-radius: 5px;
     border-radius: 75px;
     @include respond(tab-land){
         height: 60rem;
@@ -190,6 +199,7 @@
         height: 50rem;
         width: 30rem;
         margin-right: 0;
+        border-radius: 25px;
     }
 
 }
@@ -199,6 +209,10 @@
     width: 100%;
     height: 100%;
     border-radius: 75px;
+
+    @include respond(tab-port){
+        border-radius: 25px;
+    }
 }
 
 .info_detail{
@@ -236,10 +250,9 @@
 
 
 .services{
-    margin-bottom: 5rem;
     padding: 2rem;
-    margin-top: 5rem;
-background-color: #B3E5FC;
+    margin-top: 2rem;
+background-color: rgb(214, 224, 228);
 
 
     &_section{
@@ -258,16 +271,16 @@ background-color: #B3E5FC;
             }
 
             &_svg{
-                width: 15rem;
-                height: 15rem;
+                width: 10rem;
+                height: 10rem;
             }
             &_heading{
                 text-transform: uppercase;
-                font-size: 2rem;
+                font-size: 1.5rem;
                 font-family: 'Raleway', sans-serif;
                 font-weight: bold;
                 margin-bottom: 1rem;
-                color: rgb(248, 177, 23);
+                color: #E56565;
             }
             &_list{
               list-style: none;
@@ -275,7 +288,7 @@ background-color: #B3E5FC;
 
             &_list > li{
                 font-family: 'Raleway', sans-serif;
-                font-size: 1.8rem;
+                font-size: 1.5rem;
 
             }
         }
@@ -285,14 +298,13 @@ background-color: #B3E5FC;
 
 
 .testimonial{
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 #slideshow { 
-    position: relative; 
-   height: 20rem;
- background-color: #926FE4;
+   position: relative; 
+   height: 15rem;
    text-align: center;
    display: flex;
    align-items: center;
@@ -303,7 +315,6 @@ background-color: #B3E5FC;
 #slideshow > div {
 text-align: center; 
 position: absolute;
-background-color: #926FE4;
 width: 100%;
 }
 
@@ -313,7 +324,7 @@ width: 100%;
 }
 
 .client > *{
-    color: white;
+    color:#926FE4;
 } 
 
 .client_comment{
