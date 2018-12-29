@@ -114,3 +114,34 @@
         display: block;
     }
 }
+
+
+.heading_top{
+    font-family: 'Monoton', cursive;
+    font-size: 4rem;
+    font-weight: bolder;
+    text-align: center;
+    background: linear-gradient(to right, #0B9ED0 0%,#926FE4 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    @include respond(tab-port) {
+        font-size: 3rem;
+        font-weight: bold;
+    }
+}
+
+.heading_bottom{
+    font-family: 'Monoton', cursive;
+    font-size: 4rem;
+    font-weight: bolder;
+    text-align: center;
+    background: linear-gradient(to right, #0B9ED0 0%,#926FE4 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    @include respond(tab-port) {
+        font-size: 3rem;
+        font-weight: bold;
+    }
+
+}
+

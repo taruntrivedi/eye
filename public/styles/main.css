@@ -273,6 +273,13 @@ body {
 .testimonial {
   margin-top: 3rem;
   margin-bottom: 3rem; }
+  .testimonial_heading {
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Raleway', sans-serif; }
+    @media only screen and (max-width: 56.25em) {
+      .testimonial_heading {
+        font-size: 2rem; } }
 
 #slideshow {
   position: relative;
@@ -299,6 +306,9 @@ body {
   font-family: 'Roboto';
   font-size: 2rem;
   font-weight: 300; }
+  @media only screen and (max-width: 56.25em) {
+    .client_comment {
+      font-size: 1.5rem; } }
 
 .client_name {
   font-family: infinite-stroke;
@@ -796,6 +806,32 @@ body {
     height: 100%;
     object-fit: cover;
     display: block; }
+
+.heading_top {
+  font-family: 'Monoton', cursive;
+  font-size: 4rem;
+  font-weight: bolder;
+  text-align: center;
+  background: linear-gradient(to right, #0B9ED0 0%, #926FE4 60%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+  @media only screen and (max-width: 56.25em) {
+    .heading_top {
+      font-size: 3rem;
+      font-weight: bold; } }
+
+.heading_bottom {
+  font-family: 'Monoton', cursive;
+  font-size: 4rem;
+  font-weight: bolder;
+  text-align: center;
+  background: linear-gradient(to right, #0B9ED0 0%, #926FE4 60%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+  @media only screen and (max-width: 56.25em) {
+    .heading_bottom {
+      font-size: 3rem;
+      font-weight: bold; } }
 
 .blog {
   position: relative;
